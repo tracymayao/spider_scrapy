@@ -1,0 +1,522 @@
+2018-12-02 09:36:27 engine.py[line:66]                   INFO: 开始运行时间：2018-12-02 09:36:27.243210
+2018-12-02 09:37:01 engine.py[line:66]                   INFO: 开始运行时间：2018-12-02 09:37:01.621171
+2018-12-02 09:37:04 engine.py[line:69]                   INFO: 结束运行时间：2018-12-02 09:37:04.695578
+2018-12-02 09:37:04 engine.py[line:70]                   INFO: 耗时：3.07
+2018-12-02 09:37:04 engine.py[line:71]                   INFO: 总的请求数量:500
+2018-12-02 09:37:04 engine.py[line:72]                   INFO: 总的响应数量:500
+2018-12-02 09:37:04 engine.py[line:73]                   INFO: 重复请求数量:0
+2018-12-02 09:54:07 engine.py[line:68]                   INFO: 开始运行时间：2018-12-02 09:54:07.010280
+2018-12-02 10:02:12 engine.py[line:70]                   INFO: 开始运行时间：2018-12-02 10:02:12.266874
+2018-12-02 10:02:15 engine.py[line:73]                   INFO: 结束运行时间：2018-12-02 10:02:15.297939
+2018-12-02 10:02:15 engine.py[line:74]                   INFO: 耗时：3.03
+2018-12-02 10:02:15 engine.py[line:75]                   INFO: 总的请求数量:500
+2018-12-02 10:02:15 engine.py[line:76]                   INFO: 总的响应数量:500
+2018-12-02 10:02:15 engine.py[line:77]                   INFO: 重复请求数量:0
+2018-12-02 10:02:40 engine.py[line:70]                   INFO: 开始运行时间：2018-12-02 10:02:40.911619
+2018-12-02 10:02:43 engine.py[line:73]                   INFO: 结束运行时间：2018-12-02 10:02:43.496572
+2018-12-02 10:02:43 engine.py[line:74]                   INFO: 耗时：2.58
+2018-12-02 10:02:43 engine.py[line:75]                   INFO: 总的请求数量:500
+2018-12-02 10:02:43 engine.py[line:76]                   INFO: 总的响应数量:500
+2018-12-02 10:02:43 engine.py[line:77]                   INFO: 重复请求数量:0
+2018-12-02 10:03:14 engine.py[line:70]                   INFO: 开始运行时间：2018-12-02 10:03:14.356878
+2018-12-02 10:03:36 engine.py[line:152]                   ERROR: HTTPConnectionPool(host='www.heimahui.club', port=8081): Max retries exceeded with url: /?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7fabff5da0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f7fabff5da0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='www.heimahui.club', port=8081): Max retries exceeded with url: /?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7fabff5da0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.3.11-py3.6.egg/scrapy_plus/core/engine.py", line 150, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.3.11-py3.6.egg/scrapy_plus/core/engine.py", line 108, in _execute_request_response_item
+    response = self.downloader.get_response(request)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.3.11-py3.6.egg/scrapy_plus/core/downloader.py", line 15, in get_response
+    resp = requests.get(url=request.url, headers=request.headers)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.heimahui.club', port=8081): Max retries exceeded with url: /?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7fabff5da0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+2018-12-02 10:04:15 engine.py[line:70]                   INFO: 开始运行时间：2018-12-02 10:04:15.956931
+2018-12-02 10:04:16 engine.py[line:73]                   INFO: 结束运行时间：2018-12-02 10:04:16.009104
+2018-12-02 10:04:16 engine.py[line:74]                   INFO: 耗时：0.05
+2018-12-02 10:04:16 engine.py[line:75]                   INFO: 总的请求数量:1
+2018-12-02 10:04:16 engine.py[line:76]                   INFO: 总的响应数量:1
+2018-12-02 10:04:16 engine.py[line:77]                   INFO: 重复请求数量:0
+2018-12-02 11:04:18 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:04:18.418094
+2018-12-02 11:04:19 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:04:19.076364
+2018-12-02 11:04:19 engine.py[line:78]                   INFO: 耗时：0.66
+2018-12-02 11:04:19 engine.py[line:79]                   INFO: 总的请求数量:100
+2018-12-02 11:04:19 engine.py[line:80]                   INFO: 总的响应数量:100
+2018-12-02 11:04:19 engine.py[line:81]                   INFO: 重复请求数量:0
+2018-12-02 11:05:46 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:05:46.175683
+2018-12-02 11:05:46 scheduler.py[line:53]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:05:46 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:05:46.893346
+2018-12-02 11:05:46 engine.py[line:78]                   INFO: 耗时：0.72
+2018-12-02 11:05:46 engine.py[line:79]                   INFO: 总的请求数量:102
+2018-12-02 11:05:46 engine.py[line:80]                   INFO: 总的响应数量:101
+2018-12-02 11:05:46 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:09:00 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:09:00.176867
+2018-12-02 11:09:00 scheduler.py[line:53]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:09:00 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:09:00.876935
+2018-12-02 11:09:00 engine.py[line:78]                   INFO: 耗时：0.70
+2018-12-02 11:09:00 engine.py[line:79]                   INFO: 总的请求数量:102
+2018-12-02 11:09:00 engine.py[line:80]                   INFO: 总的响应数量:101
+2018-12-02 11:09:00 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:21:45 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:21:45.216440
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=012345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798>
+2018-12-02 11:21:45 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET http://www.heimahui.club:8081/?a=0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899>
+2018-12-02 11:21:45 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:21:45.320473
+2018-12-02 11:21:45 engine.py[line:78]                   INFO: 耗时：0.10
+2018-12-02 11:21:45 engine.py[line:79]                   INFO: 总的请求数量:101
+2018-12-02 11:21:45 engine.py[line:80]                   INFO: 总的响应数量:0
+2018-12-02 11:21:45 engine.py[line:81]                   INFO: 重复请求数量:101
+2018-12-02 11:22:18 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:22:18.919030
+2018-12-02 11:22:18 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:22:18 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:22:18.935907
+2018-12-02 11:22:18 engine.py[line:78]                   INFO: 耗时：0.02
+2018-12-02 11:22:18 engine.py[line:79]                   INFO: 总的请求数量:1
+2018-12-02 11:22:18 engine.py[line:80]                   INFO: 总的响应数量:0
+2018-12-02 11:22:18 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:22:45 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:22:45.269134
+2018-12-02 11:22:46 scheduler.py[line:58]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:22:46 scheduler.py[line:39]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:22:46 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:22:46.148915
+2018-12-02 11:22:46 engine.py[line:78]                   INFO: 耗时：0.88
+2018-12-02 11:22:46 engine.py[line:79]                   INFO: 总的请求数量:2
+2018-12-02 11:22:46 engine.py[line:80]                   INFO: 总的响应数量:1
+2018-12-02 11:22:46 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:23:51 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:23:51.347596
+2018-12-02 11:23:51 scheduler.py[line:60]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:23:51 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:23:51.362655
+2018-12-02 11:23:51 engine.py[line:78]                   INFO: 耗时：0.02
+2018-12-02 11:23:51 engine.py[line:79]                   INFO: 总的请求数量:1
+2018-12-02 11:23:51 engine.py[line:80]                   INFO: 总的响应数量:0
+2018-12-02 11:23:51 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:24:07 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:24:07.859284
+2018-12-02 11:24:08 scheduler.py[line:60]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:24:08 scheduler.py[line:41]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:24:08 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:24:08.705957
+2018-12-02 11:24:08 engine.py[line:78]                   INFO: 耗时：0.85
+2018-12-02 11:24:08 engine.py[line:79]                   INFO: 总的请求数量:2
+2018-12-02 11:24:08 engine.py[line:80]                   INFO: 总的响应数量:1
+2018-12-02 11:24:08 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:25:29 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:25:29.004137
+2018-12-02 11:25:29 engine.py[line:160]                   ERROR: 'Request' object has no attribute 'fp'
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 158, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 144, in _execute_request_response_item
+    self.scheduler.add_request(result)
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/scheduler.py", line 34, in add_request
+    self.fp_container.add_fp(request.fp)  #也要让指纹进集合!
+AttributeError: 'Request' object has no attribute 'fp'
+2018-12-02 11:26:38 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:26:38.566975
+2018-12-02 11:26:38 scheduler.py[line:38]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:26:39 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:26:39.321950
+2018-12-02 11:26:39 engine.py[line:78]                   INFO: 耗时：0.75
+2018-12-02 11:26:39 engine.py[line:79]                   INFO: 总的请求数量:2
+2018-12-02 11:26:39 engine.py[line:80]                   INFO: 总的响应数量:2
+2018-12-02 11:26:39 engine.py[line:81]                   INFO: 重复请求数量:0
+2018-12-02 11:26:56 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:26:56.767504
+2018-12-02 11:26:57 scheduler.py[line:38]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:26:58 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:26:58.074419
+2018-12-02 11:26:58 engine.py[line:78]                   INFO: 耗时：1.31
+2018-12-02 11:26:58 engine.py[line:79]                   INFO: 总的请求数量:2
+2018-12-02 11:26:58 engine.py[line:80]                   INFO: 总的响应数量:2
+2018-12-02 11:26:58 engine.py[line:81]                   INFO: 重复请求数量:0
+2018-12-02 11:27:25 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:27:25.576069
+2018-12-02 11:27:25 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://www.360.cn/>
+2018-12-02 11:27:25 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 11:27:25.590670
+2018-12-02 11:27:25 engine.py[line:78]                   INFO: 耗时：0.01
+2018-12-02 11:27:25 engine.py[line:79]                   INFO: 总的请求数量:1
+2018-12-02 11:27:25 engine.py[line:80]                   INFO: 总的响应数量:0
+2018-12-02 11:27:25 engine.py[line:81]                   INFO: 重复请求数量:1
+2018-12-02 11:31:12 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:31:12.448461
+2018-12-02 11:31:15 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:31:18 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:31:22 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:31:25 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:31:28 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:31:31 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:32:51 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:32:51.214818
+2018-12-02 11:32:54 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:32:57 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:33:00 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:33:03 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:33:06 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:33:09 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://www.heimahui.club:8081>
+2018-12-02 11:48:53 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:48:53.358621
+2018-12-02 11:48:56 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:48:58 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:01 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:03 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:05 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:08 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:30 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:49:30.966057
+2018-12-02 11:49:35 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:37 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:39 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:49:42 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:50:20 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:50:20.771125
+2018-12-02 11:50:22 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:50:23 engine.py[line:160]                   ERROR: start_requests() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 158, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 128, in _execute_request_response_item
+    results = parse_func(response) # 解析函数有可能返回可迭代对象或None
+TypeError: start_requests() takes 1 positional argument but 2 were given
+2018-12-02 11:54:11 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 11:54:11.741475
+2018-12-02 11:54:13 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:16 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:19 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:21 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:23 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:26 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 11:54:28 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET https://www.360.cn/>
+2018-12-02 12:00:06 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:00:06.604809
+2018-12-02 12:00:07 engine.py[line:163]                   ERROR: list index out of range
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 161, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.4.2-py3.6.egg/scrapy_plus/core/engine.py", line 138, in _execute_request_response_item
+    for result in results:
+  File "/home/worker/Desktop/顺义13期/3.5/projecet/spiders/tencent.py", line 33, in parse
+    print(response.xpath('//a[text()="下一页"]/@href')[0])
+IndexError: list index out of range
+2018-12-02 12:01:28 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:01:28.184256
+2018-12-02 12:01:29 engine.py[line:77]                   INFO: 结束运行时间：2018-12-02 12:01:29.442596
+2018-12-02 12:01:29 engine.py[line:78]                   INFO: 耗时：1.26
+2018-12-02 12:01:29 engine.py[line:79]                   INFO: 总的请求数量:1
+2018-12-02 12:01:29 engine.py[line:80]                   INFO: 总的响应数量:1
+2018-12-02 12:01:29 engine.py[line:81]                   INFO: 重复请求数量:0
+2018-12-02 12:06:13 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:06:13.598710
+2018-12-02 12:06:16 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://hr.tencent.com/position_detail.php?id=46103&keywords=&tid=0&lid=0>
+2018-12-02 12:11:05 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:11:05.984191
+2018-12-02 12:11:05 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:05 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:36 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:12:36.290347
+2018-12-02 12:12:36 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:41 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:46 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:51 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:54 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:12:54.782407
+2018-12-02 12:12:54 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:12:59 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:13:04 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:13:09 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:13:14 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:12 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:14:12.602597
+2018-12-02 12:14:12 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:17 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:22 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:27 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:32 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:37 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:42 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:47 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:14:57 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:14:57.710250
+2018-12-02 12:14:57 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:15:02 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:15:07 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:18:17 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:18:17.685667
+2018-12-02 12:18:17 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:18:19 engine.py[line:167]                   ERROR: list index out of range
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.5.2-py3.6.egg/scrapy_plus/core/engine.py", line 165, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.5.2-py3.6.egg/scrapy_plus/core/engine.py", line 142, in _execute_request_response_item
+    for result in results:
+  File "/home/worker/Desktop/顺义13期/3.5/projecet/spiders/sina.py", line 48, in parse_detail
+    title = response.xpath("//h1[@class='main-title']/text()")[0]
+IndexError: list index out of range
+2018-12-02 12:18:21 engine.py[line:167]                   ERROR: list index out of range
+Traceback (most recent call last):
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.5.2-py3.6.egg/scrapy_plus/core/engine.py", line 165, in _error_callback
+    raise exception    # 抛出异常后，才能被日志进行完整记录下来
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/worker/miniconda3/envs/shunyi13/lib/python3.6/site-packages/scrapy_plus-3.5.2-py3.6.egg/scrapy_plus/core/engine.py", line 142, in _execute_request_response_item
+    for result in results:
+  File "/home/worker/Desktop/顺义13期/3.5/projecet/spiders/sina.py", line 48, in parse_detail
+    title = response.xpath("//h1[@class='main-title']/text()")[0]
+IndexError: list index out of range
+2018-12-02 12:18:22 scheduler.py[line:37]                   INFO: 添加不去重的请求<GET http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&type=&ch=&k=&offset_page=0&offset_num=0&num=120&asc=&page=1&r=0.5559616678192825>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi5164756.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihnyuqhi5164061.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/national/2018-11-20/doc-ihmutuec2060880.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2060825.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/pingpang/2018-11-20/doc-ihmutuec2060518.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihmutuec2060048.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2059406.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihmutuec2058909.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi5148623.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihnyuqhi5148159.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5146459.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2057706.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/go/2018-11-20/doc-ihnyuqhi5143571.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2056725.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2056719.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/t/2018-11-20/doc-ihnyuqhi5136381.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5135182.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/l/2018-11-20/doc-ihnyuqhi5127970.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/it/2018-11-20/doc-ihmutuec2054381.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2053550.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5113162.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/roll/2018-11-20/doc-ihmutuec2052558.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5105718.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/world/gjcj/2018-11-20/doc-ihmutuec2051290.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5096826.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/roll/2018-11-20/doc-ihnyuqhi5090758.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2048695.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5084212.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/volleyball/2018-11-20/doc-ihnyuqhi5083967.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/national/2018-11-20/doc-ihnyuqhi5072509.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/athletics/2018-11-20/doc-ihmutuec2045755.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2044703.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2043228.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/go/2018-11-20/doc-ihmutuec2042273.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2041718.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/money/forex/forexinfo/2018-11-20/doc-ihmutuec2041492.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/s/2018-11-20/doc-ihnyuqhi5032984.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi5032180.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/national/2018-11-20/doc-ihnyuqhi5026437.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/magicski/2018-11-20/doc-ihmutuec2038142.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5020390.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5019471.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi5010861.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2035252.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/roll/2018-11-20/doc-ihmutuec2035057.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/world/2018-11-20/doc-ihnyuqhi4999932.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/go/2018-11-20/doc-ihmutuec2034032.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2033853.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4993341.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2031415.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2027325.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/roll/2018-11-20/doc-ihmutuec2025725.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/badmin/2018-11-20/doc-ihmutuec2025134.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2025014.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2024955.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/national/2018-11-20/doc-ihnyuqhi4941195.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/badmin/2018-11-20/doc-ihnyuqhi4939872.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/world/gjcj/2018-11-20/doc-ihnyuqhi4939221.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4935763.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4924122.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/other/2018-11-20/doc-ihmutuec2018962.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2017430.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/national/2018-11-20/doc-ihmutuec2016532.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2015584.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4878976.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/world/2018-11-20/doc-ihmutuec2014299.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/china/2018-11-20/doc-ihmutuec2014243.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2014101.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2013726.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/j/2018-11-20/doc-ihmutuec2013376.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2012324.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2012220.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2011102.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2010649.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4849963.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2009303.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4848169.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4846884.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/it/2018-11-20/doc-ihmutuec2008559.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4843425.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/china/2018-11-20/doc-ihnyuqhi4838841.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2005345.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2005089.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec2004463.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec2003044.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/2018-11-20/doc-ihnyuqhi4811001.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4809200.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4802215.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/t/2018-11-20/doc-ihmutuec2001157.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/2018-11-20/doc-ihnyuqhi4800221.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/t/2018-11-20/doc-ihnyuqhi4793951.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4791000.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/china/other/2018-11-20/doc-ihnyuqhi4790563.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/it/2018-11-20/doc-ihmutuec1998389.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4781142.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec1996881.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4774498.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihnyuqhi4771716.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/basketball/cba/2018-11-20/doc-ihnyuqhi4769477.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/others/sailing/2018-11-20/doc-ihnyuqhi4762638.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/s/2018-11-20/doc-ihnyuqhi4757815.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/2018-11-20/doc-ihmutuec1993089.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec1992826.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/run/2018-11-20/doc-ihmutuec1991673.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihmutuec1989764.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4736664.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4736556.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4736452.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/go/2018-11-20/doc-ihmutuec1988579.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/it/2018-11-20/doc-ihnyuqhi4726609.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4722181.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/i/2018-11-20/doc-ihnyuqhi4721177.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/2018-11-20/doc-ihnyuqhi4720870.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://mil.news.sina.com.cn/world/2018-11-20/doc-ihmutuec1986515.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4716892.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihnyuqhi4715944.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/stock/usstock/c/2018-11-20/doc-ihmutuec1985424.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://sports.sina.com.cn/run/2018-11-20/doc-ihmutuec1985389.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://tech.sina.com.cn/it/2018-11-20/doc-ihnyuqhi4711057.shtml>
+2018-12-02 12:18:22 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET http://finance.sina.com.cn/world/gjcj/2018-11-20/doc-ihnyuqhi4710445.shtml>
+2018-12-02 12:20:27 engine.py[line:74]                   INFO: 开始运行时间：2018-12-02 12:20:27.688738
+2018-12-02 12:20:30 scheduler.py[line:59]                   INFO: 发现重复的请求：<GET https://hr.tencent.com/position_detail.php?id=46103&keywords=&tid=0&lid=0>
